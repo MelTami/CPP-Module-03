@@ -6,7 +6,8 @@
 /*   By: mvavasso <mvavasso@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/10 20:40:55 by mvavasso          #+#    #+#             */
-/*   Updated: 2024/03/10 20:40:56 by mvavasso         ###   ########.fr       */
+/*   Updated: 2024/03/10 23:47:47 by mvavasso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "ClapTrap.hpp"
