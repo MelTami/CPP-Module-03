@@ -6,7 +6,7 @@
 /*   By: mvavasso <mvavasso@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/14 17:53:16 by mvavasso          #+#    #+#             */
-/*   Updated: 2024/03/14 18:51:46 by mvavasso         ###   ########.fr       */
+/*   Updated: 2024/03/14 19:14:06 by mvavasso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,13 +22,10 @@ ScavTrap::ScavTrap(const std::string &name) : ClapTrap()
     std::cout << "[ScavTrap] constructor of" << name <<  "has been called" << std::endl;
 }
 
-ScavTrap::ScavTrap(const std::string &_name, const std::string &_color, unsigned int const hp, unsigned int const ep, unsigned int const ad) : ClapTrap()
+ScavTrap::ScavTrap(const std::string &_name, const std::string &_color) : ClapTrap()
 {
     name = _name;
 	color = _color;
-	hitpoints = hp;
-	energypoints = ep;
-	attackdamage = ad;
 
 	std::cout << "[ScavTrap] " << color << name << COLOR_RESET
 	<< " has joined the game" << "(HP: " << hitpoints

@@ -6,13 +6,15 @@
 #    By: mvavasso <mvavasso@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/03/10 20:41:04 by mvavasso          #+#    #+#              #
-#    Updated: 2024/03/10 23:26:39 by mvavasso         ###   ########.fr        #
+#    Updated: 2024/03/14 21:04:06 by mvavasso         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME	= ClapTrap
+NAME	= FragTrap
 SRCS	= main.cpp\
- 		ClapTrap.cpp
+ 		ClapTrap.cpp \
+		ScavTrap.cpp \
+		FragTrap.cpp
 OBJS		= $(addprefix objects/, $(notdir $(SRCS:.cpp=.o)))
 FLAGS		= -Wall -Wextra -Werror -g -std=c++98
 CC			= c++

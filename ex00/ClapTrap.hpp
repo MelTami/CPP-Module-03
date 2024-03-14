@@ -6,7 +6,7 @@
 /*   By: mvavasso <mvavasso@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/10 20:40:58 by mvavasso          #+#    #+#             */
-/*   Updated: 2024/03/14 21:08:18 by mvavasso         ###   ########.fr       */
+/*   Updated: 2024/03/14 22:03:21 by mvavasso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,9 +53,9 @@ public:
 
     bool isDead(void);
 
-	std::ostream&operator<<(std::ostream& os);
+	
 };
 
-std::ostream& operator<<(std::ostream& os, const ClapTrap& obj);
+ 
 
 #endif
