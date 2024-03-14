@@ -6,7 +6,7 @@
 /*   By: mvavasso <mvavasso@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/10 20:41:02 by mvavasso          #+#    #+#             */
-/*   Updated: 2024/03/14 17:39:13 by mvavasso         ###   ########.fr       */
+/*   Updated: 2024/03/14 20:53:07 by mvavasso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,23 +16,23 @@ int main (void)
 {
     //name, color name, hp, energy, attack damage
 	std::cout << COLOR_BHWHITE << "CONSTRUCTORS" << COLOR_RESET << std::endl;
-	ClapTrap Foo("Foo", COLOR_BHYELLOW, 30, 2, 8);
-	ClapTrap Boo("Boo", COLOR_BHRED, 26, 6, 10);
-	ClapTrap Goo("Goo", COLOR_BHCYAN, 20, 8, 7);
-	ClapTrap Doo("Doo", COLOR_BHMAGENTA, 18, 4, 6);
-	ClapTrap Loo("Loo", COLOR_BHGREEN, 14, 10, 4);
+	ClapTrap Foo("Foo", COLOR_BHYELLOW);
+	ClapTrap Boo("Boo", COLOR_BHRED);
+	ClapTrap Goo("Goo", COLOR_BHCYAN);
+	ClapTrap Doo("Doo", COLOR_BHMAGENTA);
+	ClapTrap Loo("Loo", COLOR_BHGREEN);
 
 	std::cout << std::endl << COLOR_BHWHITE << "THE FIGHT" << COLOR_RESET << std::endl;
 	//KILL
 	Doo.attack(Loo.getName());
-	Loo.takeDamage(6);
+	Loo.takeDamage(0);
 	Foo.attack(Loo.getName());
-	Loo.takeDamage(8);
+	Loo.takeDamage(0);
 
 	//NO ENERGY POINTS
 	Foo.attack(Doo.getName());
-    Doo.takeDamage(8);
-	Foo.beRepaired(6);
+    Doo.takeDamage(0);
+	Foo.beRepaired(2);
 
 	//ATTACK
 	Boo.attack(Goo.getName());
@@ -42,7 +42,7 @@ int main (void)
 
 	//PLAYER IS DEAD (no side effects)
 	Loo.attack(Foo.getName());
-	Loo.takeDamage(4);
+	Loo.takeDamage(0);
 	Loo.beRepaired(6);
 
 	//HEAL

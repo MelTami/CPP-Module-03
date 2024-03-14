@@ -6,7 +6,7 @@
 /*   By: mvavasso <mvavasso@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/10 20:40:55 by mvavasso          #+#    #+#             */
-/*   Updated: 2024/03/14 17:33:18 by mvavasso         ###   ########.fr       */
+/*   Updated: 2024/03/14 21:08:18 by mvavasso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,14 +17,12 @@ ClapTrap::ClapTrap(void)
     std::cout << "[ClapTrap] Default constructor has been called" << std::endl;
 }
 
-ClapTrap::ClapTrap(const std::string name) : name(name), hitpoints(10), energypoints(10), attackdamage(0)
+ClapTrap::ClapTrap(const std::string name) : name(name)
 {
     std::cout << "[ClapTrap] constructor of" << name <<  "has been called" << std::endl;
 }
 
-ClapTrap::ClapTrap(const std::string &name, const std::string &color, unsigned int const hp,
-unsigned int const ep, unsigned int const ad) : name(name), color(color),
-hitpoints(hp), energypoints(ep), attackdamage(ad)
+ClapTrap::ClapTrap(const std::string &name, const std::string &color) : name(name), color(color), hitpoints(HIT_POINTS), energypoints(ENERGY_POINTS), attackdamage(ATTACK_POINTS)
 {
 	std::cout << "[ClapTrap] " << color << name << COLOR_RESET
 	<< " has joined the game" << "(HP: " << hitpoints
@@ -140,27 +138,27 @@ int ClapTrap::getHitPoints(void) const
 	return hitpoints;
 }
 
-int ClapTrap::getenergypoints(void) const
+int ClapTrap::getEnergyPoints(void) const
 {
 	return energypoints;
 }
 
-int ClapTrap::getattackdamage(void) const
+int ClapTrap::getAttackDamage(void) const
 {
 	return attackdamage;
 }
 
-void ClapTrap::sethitpoints(const unsigned int hp)
+void ClapTrap::setHitPoints(const unsigned int hp)
 {
 	hitpoints = hp;
 }
 
-void ClapTrap::setenergypoints(const unsigned int ep)
+void ClapTrap::setEnergyPoints(const unsigned int ep)
 {
 	energypoints = ep;
 }
 
-void ClapTrap::setattackdamage(const unsigned int ad)
+void ClapTrap::setAttackDamage(const unsigned int ad)
 {
 	attackdamage = ad;
 }
