@@ -6,7 +6,7 @@
 /*   By: mvavasso <mvavasso@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/10 20:40:58 by mvavasso          #+#    #+#             */
-/*   Updated: 2024/03/14 17:35:07 by mvavasso         ###   ########.fr       */
+/*   Updated: 2024/03/14 18:28:25 by mvavasso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,6 +52,6 @@ public:
 	std::ostream&operator<<(std::ostream& os);
 };
 
-
+std::ostream& operator<<(std::ostream& os, const ClapTrap& obj);
 
 #endif
