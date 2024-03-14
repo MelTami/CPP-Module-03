@@ -6,7 +6,7 @@
 /*   By: mvavasso <mvavasso@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/14 19:04:36 by mvavasso          #+#    #+#             */
-/*   Updated: 2024/03/14 22:00:49 by mvavasso         ###   ########.fr       */
+/*   Updated: 2024/03/14 22:18:18 by mvavasso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,6 @@ public:
 
 	void attack(const std::string &target);
 	void highFiveGuys(void);
-    ~FragTrap();
 };
 
 #endif
