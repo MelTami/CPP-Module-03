@@ -6,7 +6,7 @@
 /*   By: mvavasso <mvavasso@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/10 20:41:02 by mvavasso          #+#    #+#             */
-/*   Updated: 2024/03/14 22:19:59 by mvavasso         ###   ########.fr       */
+/*   Updated: 2024/03/15 15:54:14 by mvavasso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,31 +33,28 @@ int main (void)
 	std::cout << std::endl << COLOR_BHWHITE << "THE FIGHT" << COLOR_RESET << std::endl;
 	//Kill
 	Goo.attack(Loo.getName());
-	Loo.takeDamage(ATTACK_POINTS);
+	Loo.takeDamage(ATTACK_POINTS_S);
 	Goo.attack(Loo.getName());
-	Loo.takeDamage(ATTACK_POINTS);
+	Loo.takeDamage(ATTACK_POINTS_S);
 	Foo.attack(Loo.getName());
-	Loo.takeDamage(ATTACK_POINTS);
+	Loo.takeDamage(ATTACK_POINTS_S);
 	Foo.attack(Loo.getName());
-	Loo.takeDamage(ATTACK_POINTS);
+	Loo.takeDamage(ATTACK_POINTS_S);
 	Doo.attack(Loo.getName());
-	Loo.takeDamage(ATTACK_POINTS);
+	Loo.takeDamage(ATTACK_POINTS_S);
 
 	Guu.attack(Luu.getName());
-	Luu.takeDamage(ATTACK_POINTS);
+	Luu.takeDamage(ATTACK_POINTS_F);
 	Guu.attack(Luu.getName());
-	Luu.takeDamage(ATTACK_POINTS);
+	Luu.takeDamage(ATTACK_POINTS_F);
 	Fuu.attack(Luu.getName());
-	Luu.takeDamage(ATTACK_POINTS);
+	Luu.takeDamage(ATTACK_POINTS_F);
 	Fuu.attack(Luu.getName());
-	Luu.takeDamage(ATTACK_POINTS);
-	Duu.attack(Luu.getName());
-	Luu.takeDamage(ATTACK_POINTS);
-
+	Luu.takeDamage(ATTACK_POINTS_F);
 
 	//No Energy Points
 	Goo.attack(Foo.getName());
-	Foo.takeDamage(ATTACK_POINTS);
+	Foo.takeDamage(ATTACK_POINTS_S);
 	Goo.beRepaired(10);
 
 	//Attack
@@ -68,7 +65,7 @@ int main (void)
 
 	//Player is Dead (no side effects)
 	Loo.attack(Goo.getName());
-	Loo.takeDamage(ATTACK_POINTS);
+	Loo.takeDamage(ATTACK_POINTS_S);
 	Loo.beRepaired(6);
 
 	//Heal

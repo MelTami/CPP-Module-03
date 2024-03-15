@@ -6,13 +6,13 @@
 /*   By: mvavasso <mvavasso@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/10 20:40:55 by mvavasso          #+#    #+#             */
-/*   Updated: 2024/03/14 21:09:43 by mvavasso         ###   ########.fr       */
+/*   Updated: 2024/03/15 15:49:32 by mvavasso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ClapTrap.hpp"
 
-ClapTrap::ClapTrap(void) : hitpoints(HIT_POINTS), energypoints(ENERGY_POINTS), attackdamage(ATTACK_POINTS)
+ClapTrap::ClapTrap(void)
 {
     std::cout << "[ClapTrap] Default constructor has been called" << std::endl;
 }
@@ -148,7 +148,7 @@ int ClapTrap::getAttackDamage(void) const
 	return attackdamage;
 }
 
-void ClapTrap::sethitpoints(const unsigned int hp)
+void ClapTrap::setHitPoints(const unsigned int hp)
 {
 	hitpoints = hp;
 }

@@ -6,7 +6,7 @@
 /*   By: mvavasso <mvavasso@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/14 17:53:16 by mvavasso          #+#    #+#             */
-/*   Updated: 2024/03/14 19:14:06 by mvavasso         ###   ########.fr       */
+/*   Updated: 2024/03/15 15:50:51 by mvavasso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,9 @@ ScavTrap::ScavTrap(const std::string &_name, const std::string &_color) : ClapTr
 {
     name = _name;
 	color = _color;
-
+	this->setHitPoints(100);
+	this->setEnergyPoints(50);
+	this->setAttackDamage(20);
 	std::cout << "[ScavTrap] " << color << name << COLOR_RESET
 	<< " has joined the game" << "(HP: " << hitpoints
 	<< " | Energy: " << energypoints << " | Attack: "

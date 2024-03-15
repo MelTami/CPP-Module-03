@@ -6,7 +6,7 @@
 /*   By: mvavasso <mvavasso@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/14 19:04:33 by mvavasso          #+#    #+#             */
-/*   Updated: 2024/03/14 22:23:27 by mvavasso         ###   ########.fr       */
+/*   Updated: 2024/03/15 15:50:41 by mvavasso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,9 @@ FragTrap::FragTrap(const std::string &_name, const std::string &_color) : ClapTr
 {
     name = _name;
 	color = _color;
+	this->setHitPoints(100);
+	this->setEnergyPoints(100);
+	this->setAttackDamage(30);
 
 	std::cout << "[FragTrap] " << color << name << COLOR_RESET
 	<< " has joined the game" << "(HP: " << hitpoints
